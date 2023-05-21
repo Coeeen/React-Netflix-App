@@ -16,8 +16,14 @@ React Router
 Fonts from Google Fonts
 The Movie Database (TMDB) - the biggest API for movies
 
-Installation
-  npm install 
+## Installation
+
+Install my-project with npm
+
+```bash
+  npm install my-project
+  cd my-project
+```
 
   <img src="https://badgen.net/badge/powered%20by/React/blue" alt="Powered by React" />
   <img src="https://badgen.net/badge/powered%20by/Javascript/yellow" alt="Powered by Javascript" />
