@@ -16,7 +16,7 @@ This is a project that aims to imitate Netflix rather than being an exact copy o
 <li>Fonts from Google Fonts</li>
   <li>The Movie Database (TMDB) - the biggest API for movies</li>
 <ul>
-## Installation
+<h1>Instalation</h1>
 
 Install my-project with npm
 
@@ -27,4 +27,4 @@ Install my-project with npm
 
   <img src="https://badgen.net/badge/powered%20by/React/blue" alt="Powered by React" />
   <img src="https://badgen.net/badge/powered%20by/Javascript/yellow" alt="Powered by Javascript" />
-  <img src="https://badgen.net/badge/powered%20by/StyledComponents/pink" alt="Powered by StyledComponents" />
+  </p>
