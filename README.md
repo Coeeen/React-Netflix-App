@@ -8,14 +8,14 @@ Here's one of my first "bigger" project, which is well known to us - Netflix!<br
 This is a project that aims to imitate Netflix rather than being an exact copy of it.
 
 <h1> To build this project, I used:</h1>
-
-Styled Components
-Framer Motion
-React-intersection-observer
-React Router
-Fonts from Google Fonts
-The Movie Database (TMDB) - the biggest API for movies
-
+<ul>
+<li>Styled Components</li>
+<li>Framer Motion</li>
+<li>React-intersection-observer</li>
+<li>React Router</li>
+<li>Fonts from Google Fonts</li>
+  <li>The Movie Database (TMDB) - the biggest API for movies</li>
+<ul>
 ## Installation
 
 Install my-project with npm
