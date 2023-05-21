@@ -1,9 +1,10 @@
-
-<h1 align="center"><img src="https://rawgit.com/gorangajic/react-icons/master/react-icons.svg" width="120" alt="React Icons">💅REACT WITH STYLED COMPONENTS 💅<img src="https://rawgit.com/gorangajic/react-icons/master/react-icons.svg" width="120" alt="React Icons"></h1>
-
+<p align="center">
+  <img src="https://rawgit.com/gorangajic/react-icons/master/react-icons.svg" width="120" alt="React Icons">
+</p>
+<h1 align="center">💅REACT WITH STYLED COMPONENTS 💅</h1>
 <div align="center">
 <h1>Hi!</h1>
-Here's one of my first "bigger" projects, which is well known to us - Netflix!<br>
+Here's one of my first "bigger" project, which is well known to us - Netflix!<br>
 This is a project that aims to imitate Netflix rather than being an exact copy of it.
   
 <h1> To build this project, I used:</h1>
