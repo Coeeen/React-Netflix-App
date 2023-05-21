@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center">
   <img src="https://rawgit.com/gorangajic/react-icons/master/react-icons.svg" width="120" alt="React Icons">
 </p>
@@ -24,3 +25,7 @@ This is a project that aims to imitate Netflix rather than being an exact copy o
   <img src="https://badgen.net/badge/powered%20by/Javascript/yellow" alt="Powered by Javascript" />
   <img src="https://badgen.net/badge/powered%20by/StyledComponents/pink" alt="Powered by StyledComponents" />
 
+=======
+# React-Netflix App
+ A website based on Netflix
+>>>>>>> main
