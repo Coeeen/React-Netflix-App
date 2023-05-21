@@ -21,5 +21,6 @@ This is a project that aims to imitate Netflix rather than being an exact copy o
   npm install 
 ```
   <img src="https://badgen.net/badge/powered%20by/React/blue" alt="Powered by React" />
-<img src="https://badgen.net/badge/powered%20by/javascript/yellow" alt="Powered by javascript" />
-  <img src="https://badgen.net/badge/powered%20by/styledcomponent/pink" alt="Powered by styled components" />
+  <img src="https://badgen.net/badge/powered%20by/Javascript/yellow" alt="Powered by Javascript" />
+  <img src="https://badgen.net/badge/powered%20by/StyledComponents/pink" alt="Powered by StyledComponents" />
+
