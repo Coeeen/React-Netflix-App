@@ -5,7 +5,31 @@ import "../Join.css";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import WatchTv from "./WatchTv";
+import KidsContent from "./KidsContent";
+import WatchEveryWhere from "./WatchEveryWhere";
+
 function JoinNow() {
+  const HomeMotion = {
+    hidden: { y: -100, opacity: 0 },
+    show: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 1,
+        delayChildren: 0.5,
+        staggerChildren: 0.5,
+      },
+    },
+  };
+  const ShowMotion = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: { delay: 3, duration: 0.5 },
+    },
+  };
+
   return (
     <BodyWrapper>
       <NavBar>
@@ -16,18 +40,31 @@ function JoinNow() {
           <ButtonLogIn>LOG IN</ButtonLogIn>
         </Link>
       </NavBar>
-      <LogInPanel>
-        <Header>Movies, series and much more without limits!</Header>
-        <SubText>Watch everywhere. Cancel anytime</SubText>
-        <RenewText>
+      <LogInPanel variants={HomeMotion} initial="hidden" animate="show">
+        <Header variants={HomeMotion}>
+          Movies, series and much more without limits!
+        </Header>
+        <SubText variants={HomeMotion}>
+          Watch everywhere. Cancel anytime
+        </SubText>
+        <RenewText variants={HomeMotion}>
           Let's start watching. Enter your email address to create or renew your
           account
         </RenewText>
-        <FormContainer>
+        <FormContainer variants={ShowMotion} initial="hidden" animate="show">
           <EmailInput type="text" placeholder="Adres E-mail"></EmailInput>
           <EmailSubmit>Start's now</EmailSubmit>
         </FormContainer>
       </LogInPanel>
+      <WatchTv />
+      <WhiteLine />
+      <WatchEveryWhere />
+      <WhiteLine />
+      <KidsContent />
+      <Description>
+        This is not a commercial website, but a project created by me for my
+        portfolio.
+      </Description>
     </BodyWrapper>
   );
 }
@@ -58,7 +95,7 @@ const ButtonLogIn = styled.button`
   cursor: pointer;
   font-size: 1em;
   text-align: center;
-  width: 125px;
+  width: 100px;
   margin: 25px 25px 0px 0px;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
@@ -76,7 +113,7 @@ const ButtonLogIn = styled.button`
   }
 `;
 
-const LogInPanel = styled.div`
+const LogInPanel = styled(motion.div)`
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(
@@ -92,12 +129,12 @@ const LogInPanel = styled.div`
   margin: 0 auto;
 
   @media (max-width: 768px) {
-    padding: 10%;
+    scale: 90%;
   }
 `;
 
-const Header = styled.h1`
-  margin: 10% 0px 5px 0%;
+const Header = styled(motion.h1)`
+  margin: 10% 0px 0px 0%;
   font-size: 6rem;
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 2px;
@@ -116,8 +153,8 @@ const Header = styled.h1`
     margin: 10% 0px 5px 5%;
   }
 `;
-const SubText = styled.h2`
-  margin: 1% 5% 0% 7%;
+const SubText = styled(motion.h2)`
+  margin: 1% 0% 0% 12%;
   font-size: 3rem;
   font-family: "Bebas Neue", sans-serif;
   line-height: 0.9;
@@ -130,8 +167,8 @@ const SubText = styled.h2`
     font-size: 1.5rem;
   }
 `;
-const RenewText = styled.p`
-  margin: 1.5% 5% 0% 6%;
+const RenewText = styled(motion.p)`
+  margin: 1% 5% 0% 10%;
   font-size: 1.5rem;
   font-family: "Bebas Neue", sans-serif;
   line-height: 0.9;
@@ -145,7 +182,7 @@ const RenewText = styled.p`
   }
 `;
 
-const FormContainer = styled.div`
+const FormContainer = styled(motion.div)`
   display: flex;
   align-items: center;
   margin-top: 1%;
@@ -158,11 +195,11 @@ const FormContainer = styled.div`
 const EmailInput = styled.input`
   font-family: "Bebas Neue", sans-serif;
   width: 20%;
-  border-color: green;
+  border-color: rgba(255, 255, 255, 0, 6);
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
   padding: 20px;
-  margin: 0% 1% 0% 6%;
+  margin: 0% 1% 0% 10%;
   color: white;
   @media (max-width: 768px) {
     width: 60%;
@@ -177,14 +214,29 @@ const EmailSubmit = styled.button`
   border-radius: 0.2em;
   cursor: pointer;
   font-size: 1.3em;
-  width: 100%;
-  max-width: 400px;
+  width: 50%;
+  max-width: 250px;
   font-family: "Bebas Neue", sans-serif;
 
   @media (max-width: 768px) {
     font-size: 1em;
   }
 `;
+
 const BodyWrapper = styled.div`
   background-color: #00081d;
+`;
+
+const WhiteLine = styled.div`
+  width: 80%;
+  padding: 4px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 auto;
+`;
+const Description = styled.p`
+  margin: 10% 0px 5px 5px;
+  font-family: "Open Sans", sans-serif;
+  color: grey;
+  opacity: 0.4;
+  font-size: 0.8em;
 `;
