@@ -21,9 +21,11 @@ This is a project that aims to imitate Netflix rather than being an exact copy o
 Install my-project with npm
 
 ```bash
-  npm install my-project
-  cd my-project
+  npm install
+  
 ```
+  
+I know that I should save the API key in the SVG file, but if I leave it, the work can be seen more quickly...
 
   <img src="https://badgen.net/badge/powered%20by/React/blue" alt="Powered by React" />
   <img src="https://badgen.net/badge/powered%20by/Javascript/yellow" alt="Powered by Javascript" />
