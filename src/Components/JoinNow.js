@@ -68,9 +68,9 @@ const ButtonLogIn = styled.button`
   }
   &:hover {
     transform: scale(1.1);
-    -webkit-box-shadow: 0px 0px 30px 11px rgba(255, 0, 0, 0.4);
-    -moz-box-shadow: 0px 0px 30px 11px rgba(255, 0, 0, 0.4);
-    box-shadow: 0px 0px 30px 11px rgba(255, 68, 0, 0.8);
+    -webkit-box-shadow: 0px 0px 30px 11px rgba(255, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 30px 11px rgba(255, 0, 0, 0.3);
+    box-shadow: 0px 0px 30px 11px rgba(255, 68, 0, 0.3);
     /* color: #f40612;
     background-color: white; */
   }
