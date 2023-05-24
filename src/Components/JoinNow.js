@@ -22,12 +22,17 @@ function JoinNow() {
       },
     },
   };
+
   const ShowMotion = {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
       transition: { delay: 3, duration: 0.5 },
     },
+  };
+  const SubTextMotion = {
+    hidden: { opacity: 0, x: 200 },
+    show: { opacity: 1, x: 0, transition: { duration: 1.5 } },
   };
 
   return (
@@ -47,7 +52,7 @@ function JoinNow() {
         <SubText variants={HomeMotion}>
           Watch everywhere. Cancel anytime
         </SubText>
-        <RenewText variants={HomeMotion}>
+        <RenewText variants={SubTextMotion}>
           Let's start watching. Enter your email address to create or renew your
           account
         </RenewText>
@@ -96,7 +101,7 @@ const ButtonLogIn = styled.button`
   font-size: 1em;
   text-align: center;
   width: 100px;
-  margin: 25px 25px 0px 0px;
+  margin: 35px 25px 0px 0px;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   @media (max-width: 768px) {
@@ -118,8 +123,8 @@ const LogInPanel = styled(motion.div)`
   flex-direction: column;
   background-image: linear-gradient(
       to right,
-      rgba(0, 212, 255, 0.1),
-      rgba(255, 0, 151, 0.3)
+      rgba(0, 212, 255, 0.2),
+      rgba(255, 0, 151, 0.4)
     ),
     url(${SignInBackground});
   height: 85vh;
@@ -137,7 +142,7 @@ const Header = styled(motion.h1)`
   margin: 10% 0px 0px 0%;
   font-size: 6rem;
   font-family: "Bebas Neue", sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   line-height: 0.9;
   color: white;
   max-width: 60%;
@@ -154,11 +159,13 @@ const Header = styled(motion.h1)`
   }
 `;
 const SubText = styled(motion.h2)`
-  margin: 1% 0% 0% 12%;
+  margin: 1% 0% 0% 9%;
   font-size: 3rem;
   font-family: "Bebas Neue", sans-serif;
   line-height: 0.9;
   color: white;
+  letter-spacing: 4px;
+
   @media (max-width: 768px) {
     max-width: 100%;
     font-size: 2rem;

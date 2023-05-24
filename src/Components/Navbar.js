@@ -41,7 +41,7 @@ const NavBarText = styled.div`
   font-weight: lighter;
   word-spacing: 3px;
   @media (max-width: 768px) {
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
 `;
 

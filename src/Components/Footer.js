@@ -38,7 +38,9 @@ function Footer() {
         </FooterTextStyle>
         <FooterStyle>
           <Link to="JoinNow">
-            <ButtonStyle>JOIN NOW</ButtonStyle>
+            <ButtonStyle onClick={() => window.scrollTo(0, 0)}>
+              JOIN NOW
+            </ButtonStyle>
           </Link>
         </FooterStyle>
       </motion.div>
