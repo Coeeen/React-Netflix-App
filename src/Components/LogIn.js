@@ -30,7 +30,7 @@ function LogIn() {
         <LoginForm>
           <Heading>Login</Heading>
           <Input type="text" placeholder="E-mail or phone number" />
-          <Input type="text" placeholder="Password" />
+          <Input type="password" placeholder="Password" />
           <ButtonLogIn>Log in</ButtonLogIn>
           <CheckBox>
             <input type="checkbox" />
