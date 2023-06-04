@@ -16,9 +16,9 @@ function KidsContent() {
     },
   };
   const TextMotion = {
-    hidden: { x: -100, opacity: 0, scale: 0 },
+    hidden: { opacity: 0, scale: 0 },
     show: {
-      y: 0,
+      x: 0,
       opacity: 1,
       scale: 1,
       transition: { duration: 1 },
@@ -35,9 +35,8 @@ function KidsContent() {
       >
         <TvHeader>Kids content</TvHeader>
         <TvText>
-          Let children embark on adventures with their favorite characters in a
-          special section of the service offered for free as part of the
-          membership.
+          Children can embark on character-filled adventures in a free special
+          section of our membership.
         </TvText>
       </TextContainer>
       <ImageContainer variants={ImageMotion} initial="hidden" animate="show">
@@ -120,7 +119,7 @@ const TvText = styled.p`
   font-size: 2.5rem;
   font-family: "Bebas Neue", sans-serif;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 30px auto;
   color: white;
   text-align: center;
   letter-spacing: 1.2px;

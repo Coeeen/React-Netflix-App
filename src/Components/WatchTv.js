@@ -8,9 +8,9 @@ function WatchTv() {
   const [TextElement, ControlLElement] = AnimatedContainer();
 
   const TextMotion = {
-    hidden: { x: -100, opacity: 0, scale: 0 },
+    hidden: { opacity: 0, scale: 0 },
     show: {
-      y: 0,
+      x: 0,
       opacity: 1,
       scale: 1,
       transition: { duration: 1 },
@@ -44,7 +44,7 @@ const WatchOnTv = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 10% 0% 5% 0%;
+  margin: 10% 0% 10% 0%;
   padding: 0 5%;
 
   @media (max-width: 768px) {
@@ -59,8 +59,6 @@ const TextContainer = styled(motion.div)`
   text-align: center;
   @media (max-width: 768px) {
     height: auto;
-    padding: 0;
-    margin: 5% 0;
   }
 `;
 
