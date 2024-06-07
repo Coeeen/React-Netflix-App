@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://rawgit.com/gorangajic/react-icons/master/react-icons.svg" width="120" alt="React Icons">
 </p>
-<h1 align="center">💅REACT WITH STYLED COMPONENTS 💅</h1>
+<h1 align="center">REACT WITH STYLED COMPONENTS</h1>
 <div align="center">
 <h1>Hi!</h1>
 Here's one of my first "bigger" project, which is well known to us - Netflix!<br>
