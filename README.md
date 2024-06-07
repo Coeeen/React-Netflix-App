@@ -13,7 +13,6 @@ This is a project that aims to imitate Netflix rather than being an exact copy o
 <li>Framer Motion</li>
 <li>React-intersection-observer</li>
 <li>React Router</li>
-<li>Fonts from Google Fonts</li>
   <li>The Movie Database (TMDB) - the biggest API for movies</li>
 <ul>
 <h1>Instalation</h1>
